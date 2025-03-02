@@ -1,0 +1,9 @@
+version: '3.7'
+
+services:
+  backend:
+    image: bot-backend
+    env_file: .env
+    volumes:
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
